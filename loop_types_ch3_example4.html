@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        var degreeFahrenheit = [212.10, 32.3, -450.15];
+        var degCelcius = [];
+        var loopCounter;
+
+        //Go through each of the 3 given values
+        for (loopCounter = 0; loopCounter <=2; loopCounter++) {
+            
+            // Conversion formula
+            degCelcius[loopCounter] = 5/9 * (degreeFahrenheit[loopCounter] - 32);
+
+            //Print the result on screen for each value
+            document.write("The " + degreeFahrenheit[loopCounter] + " Farenheit is " + degCelcius[loopCounter] + " Celcius<br/>");
+        }
+
+        // FOR IN loop example
+        var degFarh = [100, 200, 300, 400, 500];
+        var elementArray;
+
+        for (elementArray in degFarh) {
+            document.write("New Fahrenheit value at position " + elementArray + " is " + degFarh[elementArray] + "<br/>");
+        }
+
+        // WHILE loop example
+        var degFarh1 = [200, 250.11, 300.56, 450.17, 456.56];
+        var degCelcius1 = [];
+        var loopCounter1 = 0;
+
+        while (loopCounter1 <= 4) {
+            degCelcius1 [loopCounter1] = 5/9 * (degFarh1[loopCounter1] - 32);
+            document.write(degFarh1[loopCounter1] + " Fahrenheit = " + degCelcius1[loopCounter1] + " Celcius" + "<br/>");
+            loopCounter1 ++;
+        };
+
+    </script>
+    
+</body>
+</html>
