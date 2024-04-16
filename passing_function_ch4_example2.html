@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing Functions</title>
+</head>
+<body>
+    <script>
+        
+        function toCelcius(degFahrenehit) {
+            var degCelcius = 9/5 * (degFahrenehit + 32);
+            document.write(degFahrenehit + " Fahrenheit = " + degCelcius + " Celcius." + "<br/>");
+        }
+
+        function toFahrenheit(degCelcius) {
+            var degFahrenehit= 5/9 * (degCelcius - 32);
+            document.write(degCelcius + " Celcius = " + degFahrenehit + " Fahrenheit." + "<br/>");
+        };
+
+        toFahrenheit(35);
+        toCelcius(200);
+        
+    </script>
+    
+</body>
+</html>

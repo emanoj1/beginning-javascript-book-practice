@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Functions</title>
+</head>
+<body>
+    <script>
+        // Define a function for temperature conversion
+        function convertTemperature(degFahrenheit) {
+            var degCelcius = 5/9 * (degFahrenheit - 32);
+            return degCelcius;
+        }
+
+        var degFahrenheit = [300.15, 212.35, 167];
+        var degCelcius = [];
+        var loopCounter;
+
+        for (loopCounter = 0; loopCounter <= 2; loopCounter ++) {
+            degCelcius[loopCounter] = convertTemperature(degFahrenheit[loopCounter]);
+            document.write(degFahrenheit[loopCounter] + " Fahrenheit = " + degCelcius[loopCounter] + " Celcius" + "<br/>");
+        }
+
+    </script>
+    
+</body>
+</html>
