@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        var secretNumber = parseInt(prompt("Enter a secret number between 1-5: "), 10);
+
+        switch(secretNumber) {
+            case 1:
+            case 2:
+                document.write("Nope. Higher");
+                break;
+
+            case 3:
+                document.write("YES! It is 3. Well done.");
+                break;
+
+            case 4:
+            case 5:
+                document.write("Lower!");
+                break;
+
+            default:
+                document.write("Enter a number between 1- 5 only. Try again.")
+        }
+
+    </script>
+    
+</body>
+</html>

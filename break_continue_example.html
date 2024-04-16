@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue Statements</title>
+</head>
+<body>
+    <script>
+        var degreeFahrenheit = [123, 564, "Manoj"]
+        var degCelcius = [];
+        var loopCounter;
+
+        for (loopCounter = 0; loopCounter <= 2; loopCounter ++) {
+            if (isNaN(degreeFahrenheit[loopCounter])) {
+                document.write("You entered: " + degreeFahrenheit[loopCounter] + 
+                ". This is not a number! Only Numerics please!" + "<br/>");
+                continue;
+            }
+            degCelcius[loopCounter] = 5/9 * (degreeFahrenheit[loopCounter] - 32);
+            document.write(degreeFahrenheit[loopCounter] + " Fahrenheit is " + degCelcius[loopCounter] + " Celcius" + "<br/>");
+        }
+    </script>
+    
+</body>
+</html>

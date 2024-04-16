@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF CONDITION</title>
+</head>
+<body>
+    <script>
+        var degFahrenheit = parseInt(prompt("Enter Degree Fahrenheit: "),10);
+        var degCelcius = 5/9 * (degFahrenheit - 32);
+
+        document.write("For the " + degFahrenheit + " Farenheit you entered, the converted degree Celcius is " + degCelcius + "<br/>");
+
+        if (degCelcius < 0) {
+            document.write("That's below freezing point!");
+        }
+
+        if (degCelcius == 100) {
+            document.write("That's the boiling point of water!!")
+        }
+    </script>
+    
+</body>
+</html>
