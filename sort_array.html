@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort items in an array</title>
+</head>
+<body>
+    <script>
+        
+        // SORT STRINGS
+
+        // Store unsorted numbers
+        var unSortedNames = ["betty", "catherine", "julie", "melanie", "ollie", "nancy"]
+        
+        // Display the unsorted numbers with a line break
+        document.write("The unsorted numbers are: " + unSortedNames + "<br/>");
+        
+        // Sort the numbers using the Sort method
+        var sortedNames = unSortedNames.sort();
+
+        // Separate each item with a comma and then a space
+        var sortedNamesFormatted = sortedNames.join(', ');
+
+        // Display the sorted numbers after formatting
+        document.write("The sorted numbers are : " + sortedNamesFormatted + "<br/>");
+
+        // SORT NUMBERS
+
+        // Store unsorted numbers
+        var unSortedNumbers = [3, 7, 4, 9, 12, 45, 76, 1, 64, 25, 56]
+
+        // Display the unsorted numbers with a line break
+        document.write("The unsorted numbers are: " + unSortedNumbers + "<br/>");
+
+        // Create a copy of the array and then sort it
+        var sortedNumbers = unSortedNumbers.slice().sort(function(a, b) {
+        return a - b;
+        });
+
+        // Joining the sorted numbers with commas and spaces
+        var formattedNumbers = sortedNumbers.join(', ');
+
+        // Display the sorted numbers
+        document.write("The sorted numbers are : " + formattedNumbers);
+
+    </script>
+    
+</body>
+</html>
