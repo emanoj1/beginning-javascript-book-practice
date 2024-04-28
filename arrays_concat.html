@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatinating 2 arrays</title>
+</head>
+<body>
+    <script>
+        // Make 2 example arrays 
+        var peopleNames = ["Manoj", "Matt", "Michael"];
+        var peopleAges = [30, 31, 32];
+
+        // Join the 2 arrays into one
+        var peopleDetails = peopleNames.concat(peopleAges);
+        
+        // Insert a comma and a space between each value printed on screen
+        var formattedDetails = peopleDetails.join(', ');
+
+        //Print the result on screen
+        document.write("\nThe new array with all details are : " + formattedDetails);
+    </script>
+    
+</body>
+</html>
