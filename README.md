@@ -1,2 +1,2 @@
 # beginning-javascript-book-practice
-My self-learning of JavaScript from a book. This repo contains the practice examples and challenges seen in the book.
+These are my practice challenges from the book, "Beginning Javascript" by Jeremy McPeak and Paul Wilton. Here is the Amazon link if you want to check it out: https://amzn.to/3WnIFF6 It's a very good book for complete beginners.
